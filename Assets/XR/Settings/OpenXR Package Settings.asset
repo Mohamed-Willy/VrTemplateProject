@@ -20,6 +20,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-7363454530788299785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b213d3e3c7f3109449eb46a4c8ee42f0, type: 3}
+  m_Name: XrPerformanceSettingsFeature iPhone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
+  priority: 0
+  required: 0
 --- !u!114 &-6595119115718260256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,11 +408,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 01000000070000000d000000
+  Keys: 01000000070000000d00000004000000
   Values:
   - {fileID: 3516487188028610808}
   - {fileID: 4562399066214109858}
   - {fileID: 4743988726369454405}
+  - {fileID: 8581375294715896958}
 --- !u!114 &194336396378280405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,8 +602,6 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -6567687945974680696}
-  - {fileID: 6884435587922935967}
   - {fileID: 1979916374639951169}
   - {fileID: 3262570860414560109}
   - {fileID: -1817949179816572880}
@@ -591,6 +610,7 @@ MonoBehaviour:
   - {fileID: 1898028661645600366}
   - {fileID: -1363676144699119489}
   - {fileID: 4105531502344483048}
+  - {fileID: 6884435587922935967}
   - {fileID: 1778179703570190171}
   - {fileID: -3312498812847993199}
   - {fileID: -4676390703177625470}
@@ -599,6 +619,7 @@ MonoBehaviour:
   - {fileID: 5148506683863839856}
   - {fileID: 3655260859293237510}
   - {fileID: -7680617247544994685}
+  - {fileID: -6567687945974680696}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -661,8 +682,6 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -4423767953011636168}
-  - {fileID: 2811075814656013125}
   - {fileID: -6492748395647046866}
   - {fileID: -2559192477904710935}
   - {fileID: 6347595443692320559}
@@ -670,6 +689,7 @@ MonoBehaviour:
   - {fileID: 8698857214435996514}
   - {fileID: 8490280375884103997}
   - {fileID: -6595119115718260256}
+  - {fileID: 2811075814656013125}
   - {fileID: 6873739211855954927}
   - {fileID: -2591196147518756749}
   - {fileID: 7211529545382402742}
@@ -677,6 +697,7 @@ MonoBehaviour:
   - {fileID: -1203239387922757301}
   - {fileID: -2214632610387057275}
   - {fileID: -6474561684478509458}
+  - {fileID: -4423767953011636168}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -846,6 +867,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &8581375294715896958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: iPhone
+  m_EditorClassIdentifier: 
+  features:
+  - {fileID: -7363454530788299785}
+  m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
 --- !u!114 &8698857214435996514
 MonoBehaviour:
   m_ObjectHideFlags: 0
